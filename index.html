@@ -37,15 +37,13 @@
 body {
   background-color: #151515;
   color: white;
-  height: 100vh;
-  width: 100vw;
   font-family: 'IBM Plex Sans';
 }
 
 .container {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
   text-align: center;
   display: flex;
@@ -83,6 +81,7 @@ body {
   outline: none;
   transition: color;
   transition-duration: 100ms;
+  box-shadow: 0 0 15px #FFFFFF;
 }
     
 .input:disabled {
@@ -133,7 +132,7 @@ body {
 }
    .bttn-container {
               position: absolute;
-              bottom: 25%;
+              bottom: -40%;
               left: 50%;
               transform: translateX(-50%);
               display: flex;
@@ -157,7 +156,8 @@ body {
         }
 
         .bttn:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
+            box-shadow: 0 0 5px #FFFFFF;
         }
 
         @keyframes float {
@@ -169,28 +169,27 @@ body {
             }
         }
 
-        .bttn:hover {
-            animation: float 2s ease infinite;
-        }
+b {
+  text-shadow: 0 0 4px lightgray;
+}
   </style>
 
 </head>
 
 <body>
   <div class="container">
-    <h1>
-      proxy testing
+    <h1 style="font-weight: 400;">
+      welcome to <b style="font-weight: 900;">nova</b>
     </h1>
 <p class="description">have fun</p>
 <input type="text" class="input" placeholder="search the web...">
-  </div>
-
 <div class="bttn-container">
-   <a href="https://github.com/" class="bttn">Button</a>
-   <a href="https://github.com/" class="bttn">Button</a>
-   <a href="https://github.com/" class="bttn">Button</a>
-   <a href="https://github.com/" class="bttn">Button</a>
+  <a onclick="localStorage.setItem('url', '/service/hvtrs8%2F-pmkk.aoo%2F'); window.location.href = '/service/hvtrs8%2F-pmkk.aoo%2F'" class="bttn">games</a>
+  <a href="https://github.com/" class="bttn">movies</a>
+  <a href="https://github.com/" class="bttn">about</a>
 </div>
+
+  </div>
 
 
   <script src="./assets/script.js" defer></script>
