@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/apexnet.jpg" type="image/png">
-  <title>outerworld proxy</title>
+  <title>nova</title>
 
   <!-- Meta tags for SEO -->
   <meta property="og:title" content="outerworld">
@@ -71,8 +71,8 @@ body {
 
 .input {
   width: 100%;
-  background-color: transparent;
-  border: 1.5px rgb(74, 74, 74) solid;
+  background-color: #1e1e1e;
+  border: 0;
   border-radius: 30px;
   font-size: 16px;
   padding: 12px;
@@ -81,9 +81,9 @@ body {
   outline: none;
   transition: color;
   transition-duration: 100ms;
-  box-shadow: 0 0 15px #FFFFFF;
+  box-shadow: 0 0 10px #000000;
 }
-    
+
 .input:disabled {
   color: #757575;
 }
@@ -157,7 +157,8 @@ body {
 
         .bttn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 0 5px #FFFFFF;
+            box-shadow: 0 0 5px #000000;
+            background: -webkit-linear-gradient(180deg, #d53369, #daae51);
         }
 
         @keyframes float {
@@ -168,9 +169,19 @@ body {
                 transform: translateY(-5px);
             }
         }
+::placeholder {
+  background: -webkit-linear-gradient(180deg, #d53369, #daae51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 80%;
+}
+
 
 b {
-  text-shadow: 0 0 4px lightgray;
+  background: -webkit-linear-gradient(180deg, #d53369, #daae51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
   </style>
 
@@ -185,11 +196,12 @@ b {
 <input type="text" class="input" placeholder="search the web...">
 <div class="bttn-container">
   <a onclick="localStorage.setItem('url', '/service/hvtrs8%2F-pmkk.aoo%2F'); window.location.href = '/service/hvtrs8%2F-pmkk.aoo%2F'" class="bttn">games</a>
-  <a href="https://github.com/" class="bttn">movies</a>
+  <a onclick="localStorage.setItem('url', '/service/hvtrs8%2F-ngtdlkx%2Ccmm-'); window.location.href = '/service/hvtrs8%2F-ngtdlkx%2Ccmm-'" class="bttn">movies</a>
   <a href="https://github.com/" class="bttn">about</a>
 </div>
-
   </div>
+
+
 
 
   <script src="./assets/script.js" defer></script>
